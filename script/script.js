@@ -13,11 +13,11 @@ function gameStart(){
 
     let numberOfSquares;
     if(selectDifficultyEl.value==="easy"){
-        numberOfSquares = 100
+        numberOfSquares = 49
     }else if(selectDifficultyEl.value ==="medium"){
         numberOfSquares = 81
     }else{
-        numberOfSquares = 49
+        numberOfSquares = 100
     }
 
     for (let index = 0; index < numberOfSquares; index++) {
