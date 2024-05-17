@@ -9,15 +9,24 @@
 <body>
     <header>
         <div class="header-container">
-            <h1>Campo minato</h1>
+            <div class="title-container">
+                <h1>Minefield</h1>
+                <h4>select a difficulty and begin to play!</h4>
+            </div>
 
-            <button>Inizia</button>
+            <div class="difficulty-container">
+                <label for="difficulty">Select your difficulty</label>
+                <select name="select-difficulty" id="select-difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+
+            <button id="start-game">Inizia</button>
         </div>
     </header>
     <main>
-        <!-- <div id="grid">
-
-        </div> -->
     </main>
 
     <footer>

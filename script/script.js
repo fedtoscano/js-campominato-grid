@@ -1,17 +1,37 @@
 
-const startBtn = document.querySelector("button")
+const startBtn = document.querySelector("button#start-game")
 
 function gameStart(){
-    const mainEl = document.querySelector("main");
 
+    const mainEl = document.querySelector("main");
     const gridEl = document.createElement("div");
     gridEl.id = "grid";
 
     mainEl.appendChild(gridEl);
-    for (let index = 0; index < 100; index++) {
+
+    const selectDifficultyEl = document.querySelector("#select-difficulty");
+
+    let numberOfSquares;
+    if(selectDifficultyEl.value==="easy"){
+        numberOfSquares = 100
+    }else if(selectDifficultyEl.value ==="medium"){
+        numberOfSquares = 81
+    }else{
+        numberOfSquares = 49
+    }
+
+    for (let index = 0; index < numberOfSquares; index++) {
         const newSquare = document.createElement("article");
         newSquare.classList.add("square")
-    
+
+            if(selectDifficultyEl.value==="easy"){
+                newSquare.classList.add("square-easy")
+            }else if(selectDifficultyEl.value==="medium"){
+                newSquare.classList.add("square-medium")
+            }else{
+                newSquare.classList.add("square-hard")
+            }
+
         newSquare.addEventListener('click', function(){
             this.classList.add("bg-light-blue")
             console.log(this.innerText)
@@ -23,5 +43,7 @@ function gameStart(){
         newSquare.appendChild(textContent)
         gridEl.appendChild(newSquare)
     }
+    // button.disabled = true
 }
+
 startBtn.addEventListener('click', gameStart)
