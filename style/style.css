@@ -22,7 +22,8 @@ header{
 main{
     background-color: lightcyan;
     background-color: aquamarine;
-    padding: 2rem;
+    padding: 1.5rem;
+    height: 90vh;
 }
 #grid{
     display: flex;
@@ -47,6 +48,13 @@ article.square{
     align-items: center;
     justify-content: center;
 }
+
+/* bg classes */
+
+.bg-light-blue{
+    background-color: aqua;
+}
+
 /* classi semantiche */
 .justify-center{
     justify-content: center;
