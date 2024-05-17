@@ -22,9 +22,11 @@ header{
 main{
     background-color: lightcyan;
     background-color: aquamarine;
-    padding: 3rem;
+    padding: 2rem;
 }
 #grid{
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     width:500px;
     height:500px;
@@ -36,6 +38,15 @@ footer{
 
 }
 
+/* Square classes */
+article.square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* classi semantiche */
 .justify-center{
     justify-content: center;
