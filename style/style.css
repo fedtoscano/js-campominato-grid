@@ -32,22 +32,27 @@ select#select-difficulty{
     height: 100px;
 }
 main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: lightcyan;
     background-color: aquamarine;
     padding: 1.5rem;
-    height: 90vh;
+    height: 80vh;
 }
 #grid{
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    width:500px;
-    height:500px;
+    width:450px;
+    height:450px;
     border: 2px solid darkblue;
-    
 }
 footer{
-    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
 
 }
 
